@@ -66,7 +66,7 @@ function App() {
       <div>
         <h2>Todo</h2>
         <form onSubmit={(e) => handleSubmit(e)}>
-          <input type="text" onChange={(e) => handleChange(e)} className = "inputText"/>
+          <input type="text" value={inputValue} onChange={(e) => handleChange(e)} className = "inputText"/>
           <input type="submit" value = "作成" className = "submitButton"/>
         </form>
         <ul className="todoList li">
